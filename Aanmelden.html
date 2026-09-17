@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aanmelden | Night Woods 18+ SSO Club</title>
+    
+    <!-- Link naar de CSS in de map 'Css' -->
+    <link rel="stylesheet" href="Css/Opmaak.css">
+    
+    <!-- Link naar de JS in de map 'Js' -->
+    <script defer src="Js/main.js"></script>
+</head>
+<body>
+
+    <!-- Navigatiemenu -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <img src="assets/SsoLogo.png" alt="Logo" class="brand-icon">
+                Night Woods <span>MM01</span> <span>18+</span> <span>Gezelligheid</span> <span>Chillen</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="OverOns.html">Over Ons</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Galerij.html">Galerij</a></li>
+                    <li><a href="Aanmelden.html" class="btn btn-primary btn-nav active">Lid Worden</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="form-header">
+            <span class="badge">🌲 Join de Night Woods familie</span>
+            <h1>Aanmelden voor Night Woods</h1>
+            <p>Leuk dat je interesse hebt om lid te worden! Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met je op via Discord of e-mail.</p>
+        </section>
+
+        <!-- Formulier Container -->
+        <section class="card form-card hover-lift">
+            <!-- FormsSpree naar e-mail -->
+            <form action="https://formspree.io/f/mvkgorzp" method="POST" class="club-form">
+                
+                <div class="form-group">
+                    <label for="sso-naam">Star Stable Naam *</label>
+                    <input type="text" id="sso-naam" name="SSO Naam" placeholder="Bijv. Avery Starbrooke" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="leeftijd">Leeftijd (18+) *</label>
+                    <input type="number" id="leeftijd" name="Leeftijd" min="18" placeholder="Je leeftijd" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="discord">Discord Gebruikersnaam *</label>
+                    <input type="text" id="discord" name="Discord Naam" placeholder="Bijv. gebruikersnaam#0000 of gebruikersnaam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mailadres *</label>
+                    <input type="email" id="email" name="E-mail" placeholder="jouw@email.nl" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="motivatie">Overige Informatie *</label>
+                    <textarea id="motivatie" name="Motivatie" rows="5" placeholder="Waarom wil je graag bij Night Woods? Hoe heb je ons gevonden? Ben je al eerder lid geweest van een club?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit float-animation">Verstuur Aanmelding</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>2026 Night Woods SSO Club • Misty Mountain</p>
+    </footer>
+
+</body>
+</html>
